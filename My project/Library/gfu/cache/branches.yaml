@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-11-29T17:16:34.495+02:00
-  initializedAtString: 2022-11-29T16:16:33.379+02:00
+  lastUpdatedAtString: 2022-11-29T18:59:48.770+02:00
+  initializedAtString: 2022-11-29T18:33:55.037+02:00
   localBranches:
+  - name: Carlos
+    tracking: origin/Carlos
   - name: main
     tracking: origin/main
   remoteBranches:
+  - name: origin/Carlos
+    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   remotes:
@@ -31,8 +35,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - Carlos
     - main
     values:
+    - name: Carlos
+      remote:
+        name: origin
+        url: https://github.com/Hobitti/unity-demo
+      trackingBranch: Carlos
     - name: main
       remote:
         name: origin
@@ -43,9 +53,15 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - Carlos
       - HEAD
     subKeyValues:
     - Values:
+      - name: Carlos
+        remote:
+          name: origin
+          url: https://github.com/Hobitti/unity-demo
+        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
