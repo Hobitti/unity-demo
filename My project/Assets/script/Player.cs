@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 
     public float groundDrag;
 
+
+    //jump adributes
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
@@ -18,6 +20,8 @@ public class Player : MonoBehaviour
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
 
+
+    //hardset jump as space
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
 
@@ -34,6 +38,8 @@ public class Player : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+
+    float healt=3;
 
     private void Start()
     {
@@ -65,6 +71,7 @@ public class Player : MonoBehaviour
 
     private void MyInput()
     {
+        // get imput types from settings
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
@@ -115,5 +122,14 @@ public class Player : MonoBehaviour
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    public void damaged()
+    {
+        healt--;
+        if (healt == 0)
+        {
+            transform.gameObject.SetActive(false);
+        }
     }
 }

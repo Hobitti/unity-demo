@@ -354,8 +354,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/script/camera.cs"
+"Assets/script/GameManager.cs"
 "Assets/script/Player.cs"
 "Assets/script/playerCamera.cs"
+"Assets/script/RespawnScript.cs"
 -langversion:9.0
 
 /deterministic
