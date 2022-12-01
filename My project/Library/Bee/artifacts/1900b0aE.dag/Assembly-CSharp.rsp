@@ -355,8 +355,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/script/Activation.cs"
 "Assets/script/camera.cs"
+"Assets/script/FireActivation.cs"
 "Assets/script/Player.cs"
 "Assets/script/playerCamera.cs"
+"Assets/script/SpikeDamage.cs"
 -langversion:9.0
 
 /deterministic
