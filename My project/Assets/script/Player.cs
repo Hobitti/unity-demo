@@ -19,16 +19,21 @@ public class Player : MonoBehaviour
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
+    private float crouchSpeed = 0.3f;
+
 
 
     //hardset jump as space
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
 
+    //ground and height vars
     [Header("Ground Check")]
     public float playerHeight;
+    public float crouchHeight;
     public LayerMask whatIsGround;
     bool grounded;
+    bool _crouching;
 
     public Transform orientation;
 
@@ -38,12 +43,14 @@ public class Player : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+    CapsuleCollider cc;
 
     float healt=3;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        cc = GetComponent<CapsuleCollider>();
         rb.freezeRotation = true;
 
         readyToJump = true;
@@ -62,11 +69,30 @@ public class Player : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        //crouch check
+        _crouching=(Input.GetKey(KeyCode.C));
+        
+        
     }
 
     private void FixedUpdate()
     {
+        var desiredHeught = _crouching ? crouchHeight : playerHeight;
+        if (cc.height != desiredHeught)
+        {
+            adjustHeight(desiredHeught);
+        }
+
         MovePlayer();
+    }
+
+    private void adjustHeight(float desiredHeught)
+    {
+        float center = desiredHeught / 2;
+        cc.height = Mathf.Lerp(cc.height, desiredHeught, crouchSpeed);
+        transform.localScale= Vector3.Lerp(transform.localScale, new Vector3(1, center, 1), crouchSpeed);
+        
     }
 
     private void MyInput()
@@ -88,16 +114,21 @@ public class Player : MonoBehaviour
 
     private void MovePlayer()
     {
+        float speed;
+
+        if(_crouching) speed = moveSpeed / 2;
+        else if(Input.GetKey(KeyCode.LeftShift)) speed = moveSpeed * 2;
+        else speed = moveSpeed;
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         // on ground
         if (grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * speed * 10f, ForceMode.Force);
 
         // in air
         else if (!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * speed * 10f * airMultiplier, ForceMode.Force);
     }
 
     private void SpeedControl()
