@@ -354,6 +354,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/script/Activation.cs"
+"Assets/script/ArrowProjectile.cs"
+"Assets/script/ArrowTrap.cs"
 "Assets/script/camera.cs"
 "Assets/script/FireActivation.cs"
 "Assets/script/GrappleHook.cs"

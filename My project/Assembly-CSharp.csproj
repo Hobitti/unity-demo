@@ -59,6 +59,8 @@
     <Compile Include="Assets\script\playerCamera.cs" />
     <Compile Include="Assets\script\Player.cs" />
     <Compile Include="Assets\script\camera.cs" />
+    <Compile Include="Assets\script\ArrowTrap.cs" />
+    <Compile Include="Assets\script\ArrowProjectile.cs" />
     <Compile Include="Assets\script\Activation.cs" />
     <Compile Include="Assets\script\GrapplingHook.cs" />
     <Compile Include="Assets\script\SpikeDamage.cs" />

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrappleHook : MonoBehaviour
 {
-    [SerializeField] LineRenderer _lineRenderer;
+    [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private Transform _grapplingHook;
     [SerializeField] private CharacterController _controller;
     [SerializeField] private Transform hookShootPoint;
