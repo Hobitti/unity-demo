@@ -32,7 +32,11 @@ public class ArrowProjectile : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
+<<<<<<< Updated upstream
             print("You have been hit");
+=======
+            collision.transform.GetComponent<Player>().damaged();
+>>>>>>> Stashed changes
         }
     }
 

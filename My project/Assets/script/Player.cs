@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [Header("Movement")]
@@ -19,10 +19,17 @@ public class Player : MonoBehaviour
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
+<<<<<<< Updated upstream
     private float crouchSpeed = 0.3f;
 
 
 
+=======
+    private float crouchSpeed = 0.1f;
+
+
+
+>>>>>>> Stashed changes
     //hardset jump as space
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
@@ -44,14 +51,24 @@ public class Player : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
+<<<<<<< Updated upstream
     CapsuleCollider cc;
     public TMP_Text hpAmmount;
+=======
+    float cc;
+    public TMP_Text hpAmmount;
+    public GameObject endScreen;
+>>>>>>> Stashed changes
     float healt = 3;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+<<<<<<< Updated upstream
         cc = GetComponent<CapsuleCollider>();
+=======
+        cc = playerHeight;
+>>>>>>> Stashed changes
         rb.freezeRotation = true;
 
         readyToJump = true;
@@ -60,8 +77,13 @@ public class Player : MonoBehaviour
     private void Update()
     {
         // ground check
+<<<<<<< Updated upstream
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
         cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1f + 0.3f, whatIsGround);
+=======
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1.4f + 0.3f, whatIsGround);
+        cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1.4f + 0.3f, whatIsGround);
+>>>>>>> Stashed changes
         MyInput();
         SpeedControl();
 
@@ -80,7 +102,11 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         var desiredHeught = _crouching ? crouchHeight : playerHeight;
+<<<<<<< Updated upstream
         if (cc.height != desiredHeught)
+=======
+        if (cc != desiredHeught)
+>>>>>>> Stashed changes
         {
             adjustHeight(desiredHeught);
         }
@@ -91,7 +117,11 @@ public class Player : MonoBehaviour
     private void adjustHeight(float desiredHeught)
     {
         float center = desiredHeught / 2;
+<<<<<<< Updated upstream
         cc.height = Mathf.Lerp(cc.height, desiredHeught, crouchSpeed);
+=======
+        cc = Mathf.Lerp(cc, desiredHeught, crouchSpeed);
+>>>>>>> Stashed changes
         transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1, center, 1), crouchSpeed);
 
     }
@@ -163,7 +193,20 @@ public class Player : MonoBehaviour
         if (healt == 0)
         {
             transform.gameObject.SetActive(false);
+<<<<<<< Updated upstream
 
         }
     }
+=======
+            endScreen.SetActive(true);
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<playerCamera>().freeMouse();
+
+        }
+    }
+    public void restatLvl()
+    {
+        Scene scene =SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
+>>>>>>> Stashed changes
 }

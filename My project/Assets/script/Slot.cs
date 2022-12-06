@@ -30,7 +30,11 @@ public class Slot : MonoBehaviour
             item.SetActive(true);
             item.GetComponent<PickUp>().pickUpCD();
             item.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+<<<<<<< Updated upstream
             item.transform.position = new  Vector3(item.transform.position.x, 0.5f, item.transform.position.z);
+=======
+            item.transform.position = new  Vector3(item.transform.position.x, 2f, item.transform.position.z);
+>>>>>>> Stashed changes
         }
     }
 

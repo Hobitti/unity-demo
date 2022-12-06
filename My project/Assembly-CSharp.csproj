@@ -63,12 +63,20 @@
     <Compile Include="Assets\script\ArrowTrap.cs" />
     <Compile Include="Assets\script\ArrowProjectile.cs" />
     <Compile Include="Assets\script\RespawnScript.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\script\SoundManager.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\script\Activation.cs" />
     <Compile Include="Assets\script\Slot.cs" />
     <Compile Include="Assets\script\GrapplingHook.cs" />
     <Compile Include="Assets\script\SpikeDamage.cs" />
     <Compile Include="Assets\script\PickUp.cs" />
     <Compile Include="Assets\script\FireActivation.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\script\Timer.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\script\GameManager.cs" />
     <Compile Include="Assets\script\GrappleHook.cs" />
   </ItemGroup>
