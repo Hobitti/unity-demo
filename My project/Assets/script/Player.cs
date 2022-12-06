@@ -46,7 +46,7 @@ public class Player : MonoBehaviour
     Rigidbody rb;
     CapsuleCollider cc;
     public TMP_Text hpAmmount;
-    float healt=3;
+    float healt = 3;
 
     private void Start()
     {
@@ -72,9 +72,9 @@ public class Player : MonoBehaviour
             rb.drag = 0;
 
         //crouch check
-        if(!cantStand) _crouching=(Input.GetKey(KeyCode.C));
-        
-        
+        if (!cantStand) _crouching = (Input.GetKey(KeyCode.C));
+
+
     }
 
     private void FixedUpdate()
@@ -92,8 +92,8 @@ public class Player : MonoBehaviour
     {
         float center = desiredHeught / 2;
         cc.height = Mathf.Lerp(cc.height, desiredHeught, crouchSpeed);
-        transform.localScale= Vector3.Lerp(transform.localScale, new Vector3(1, center, 1), crouchSpeed);
-        
+        transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1, center, 1), crouchSpeed);
+
     }
 
     private void MyInput()
@@ -117,8 +117,8 @@ public class Player : MonoBehaviour
     {
         float speed;
 
-        if(_crouching) speed = moveSpeed / 2;
-        else if(Input.GetKey(KeyCode.LeftShift)) speed = moveSpeed * 2;
+        if (_crouching) speed = moveSpeed / 2;
+        else if (Input.GetKey(KeyCode.LeftShift)) speed = moveSpeed * 2;
         else speed = moveSpeed;
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
@@ -163,7 +163,7 @@ public class Player : MonoBehaviour
         if (healt == 0)
         {
             transform.gameObject.SetActive(false);
-            
+
         }
     }
 }
