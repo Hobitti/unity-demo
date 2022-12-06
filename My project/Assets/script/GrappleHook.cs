@@ -16,6 +16,10 @@ public class GrappleHook : MonoBehaviour
     [SerializeField] private Vector3 _offset;
     private bool isShooting, isGrappling;
     private Vector3 _hookPoint;
+    public bool isEquipped;
+    private Rigidbody itemRb;
+    public Transform rightHand;
+    public GameObject item;
 
 
 
@@ -24,6 +28,8 @@ public class GrappleHook : MonoBehaviour
         isShooting = false;
         isGrappling = false;
         _lineRenderer.enabled = false;
+        isEquipped = false;
+
     }
     // Update is called once per frame
     private void Update()
@@ -56,6 +62,16 @@ public class GrappleHook : MonoBehaviour
             }
 
         }
+        if (Input.GetKey(KeyCode.F) && isEquipped)
+        {
+            this.transform.parent = null;
+            itemRb = item.gameObject.GetComponent<Rigidbody>();
+            
+            isEquipped = false;
+            itemRb.isKinematic = false;
+            itemRb.detectCollisions = true;
+            itemRb.useGravity = true;
+        }
     }
     private void LateUpdate()
     {
@@ -68,24 +84,61 @@ public class GrappleHook : MonoBehaviour
 
     private void ShootHook()
     {
-        if (isShooting || isGrappling) return;
-        isShooting = true;
-        RaycastHit hit;
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        if(Physics.Raycast(ray,out hit, _maxGrappleDistance, _grappleLayer))
+
+        if (isEquipped == true)
         {
-            _hookPoint = hit.point;
-            isGrappling = true;
-            _grapplingHook.parent = null;
-            _grapplingHook.LookAt(_hookPoint);
-            _lineRenderer.enabled = true;
+
+            if (isShooting || isGrappling) return;
+            isShooting = true;
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, _maxGrappleDistance, _grappleLayer))
+            {
+                _hookPoint = hit.point;
+                isGrappling = true;
+                _grapplingHook.parent = null;
+                _grapplingHook.LookAt(_hookPoint);
+                _lineRenderer.enabled = true;
+            }
+
+
+
+
+            isShooting = false;
         }
 
-
-
-
-        isShooting = false;
+       
+        
+        
 
 
     }
+
+    public void OnCollisionStay(Collision collision)
+    {
+        //Pick up item on key press, parent to hand and disable rigidbody
+        if (collision.gameObject.CompareTag("Player") && Input.GetKey(KeyCode.E) && !isEquipped)
+        {
+            isEquipped = true;
+            print("YES");
+            Debug.Log(isEquipped);
+            item.transform.position = rightHand.position;
+            item.transform.rotation = rightHand.rotation;
+            isEquipped = true;
+
+
+            itemRb = item.gameObject.GetComponent<Rigidbody>();
+            itemRb.transform.parent = rightHand.transform;
+            itemRb.isKinematic = true;
+            itemRb.detectCollisions = false;
+
+
+        }
+
+
+    }
+
+
+
+
 }

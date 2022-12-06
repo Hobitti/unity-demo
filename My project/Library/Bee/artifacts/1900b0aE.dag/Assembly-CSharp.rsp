@@ -360,6 +360,7 @@
 "Assets/script/FireActivation.cs"
 "Assets/script/GrappleHook.cs"
 "Assets/script/GrapplingHook.cs"
+"Assets/script/PickUp.cs"
 "Assets/script/Player.cs"
 "Assets/script/playerCamera.cs"
 "Assets/script/SpikeDamage.cs"
