@@ -7,6 +7,8 @@ public class PickUp : MonoBehaviour
 
     private Inventory inventory;
     public GameObject item;
+    [SerializeField] Canvas Canvas;
+    bool cd= false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,14 +23,21 @@ public class PickUp : MonoBehaviour
         {
             for (int i = 0; i < inventory.slots.Length; i++)
             {
-                if (!inventory.isFull[i])
+                if (!inventory.isFull[i] && !cd)
                 {
                     inventory.isFull[i] = true;
                     Instantiate(item, inventory.slots[i].transform, false);
-                    Destroy(gameObject);
+                    Canvas.transform.GetChild(i).GetComponent<Slot>().item = gameObject;
+                    gameObject.SetActive(false);
                     break;
                 }
+                
             }
+            cd = false;
         } 
+    }
+    public void pickUpCD()
+    {
+        cd = true;
     }
 }

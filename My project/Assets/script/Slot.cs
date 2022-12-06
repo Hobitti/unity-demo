@@ -6,6 +6,7 @@ public class Slot : MonoBehaviour
 {
     private Inventory inventory;
     public int i;
+    public GameObject item;
 
     private void Start()
     {
@@ -26,6 +27,10 @@ public class Slot : MonoBehaviour
         foreach ( Transform child in transform)
         {
             GameObject.Destroy(child.gameObject);
+            item.SetActive(true);
+            item.GetComponent<PickUp>().pickUpCD();
+            item.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
+            item.transform.position = new  Vector3(item.transform.position.x, 0.5f, item.transform.position.z);
         }
     }
 

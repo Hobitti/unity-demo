@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
     public float crouchHeight;
     public LayerMask whatIsGround;
     bool grounded;
+    bool cantStand;
     bool _crouching;
 
     public Transform orientation;
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour
 
     Rigidbody rb;
     CapsuleCollider cc;
-
+    public TMP_Text hpAmmount;
     float healt=3;
 
     private void Start()
@@ -60,7 +61,7 @@ public class Player : MonoBehaviour
     {
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
-
+        cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1f + 0.3f, whatIsGround);
         MyInput();
         SpeedControl();
 
@@ -71,7 +72,7 @@ public class Player : MonoBehaviour
             rb.drag = 0;
 
         //crouch check
-        _crouching=(Input.GetKey(KeyCode.C));
+        if(!cantStand) _crouching=(Input.GetKey(KeyCode.C));
         
         
     }
@@ -158,9 +159,11 @@ public class Player : MonoBehaviour
     public void damaged()
     {
         healt--;
+        hpAmmount.text = healt + "";
         if (healt == 0)
         {
             transform.gameObject.SetActive(false);
+            
         }
     }
 }
