@@ -357,6 +357,8 @@
 "Assets/script/camera.cs"
 "Assets/script/Player.cs"
 "Assets/script/playerCamera.cs"
+"Assets/script/SoundManager.cs"
+"Assets/script/Timer.cs"
 -langversion:9.0
 
 /deterministic
