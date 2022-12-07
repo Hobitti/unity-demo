@@ -31,10 +31,7 @@ public class Activation : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.SetTrigger("activate");
-<<<<<<< Updated upstream
-=======
             other.transform.GetComponent<Player>().damaged();
->>>>>>> Stashed changes
         }
     }
 }

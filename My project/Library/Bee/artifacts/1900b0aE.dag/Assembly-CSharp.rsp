@@ -367,13 +367,9 @@
 "Assets/script/playerCamera.cs"
 "Assets/script/RespawnScript.cs"
 "Assets/script/Slot.cs"
-<<<<<<< Updated upstream
-"Assets/script/SpikeDamage.cs"
-=======
 "Assets/script/SoundManager.cs"
 "Assets/script/SpikeDamage.cs"
 "Assets/script/Timer.cs"
->>>>>>> Stashed changes
 -langversion:9.0
 
 /deterministic

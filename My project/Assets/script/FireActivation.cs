@@ -23,10 +23,7 @@ public class FireActivation : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             fire.Play();
-<<<<<<< Updated upstream
-=======
             other.transform.GetComponent<Player>().damaged();
->>>>>>> Stashed changes
 
         }
     }

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2022-12-06T13:41:06.939+02:00
-  initializedAtString: 2022-12-06T13:41:06.939+02:00
+  lastUpdatedAtString: 2022-12-07T03:59:35.028+02:00
+  initializedAtString: 2022-12-07T03:59:35.028+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/Hobitti/unity-demo.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: Oskari
-    tracking: origin/Oskari
+    name: main
+    tracking: origin/main
   currentConfigBranch:
-    name: Oskari
+    name: main
     remote:
       name: origin
       url: https://github.com/Hobitti/unity-demo.git
-    trackingBranch: Oskari
+    trackingBranch: main
   currentConfigRemote:
     name: origin
     url: https://github.com/Hobitti/unity-demo.git
