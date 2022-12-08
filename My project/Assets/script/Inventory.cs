@@ -7,7 +7,7 @@ public class Inventory : MonoBehaviour
     public bool[] isFull;
     public GameObject[] slots;
     private int slotNumber;
-    [SerializeField] Canvas Canvas;
+    [SerializeField] GameObject Canvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +53,9 @@ public class Inventory : MonoBehaviour
 
     private void updateSelectedSlot()
     {
-        //todo add effect around selected slot
+       
+        
+        
+            
     }
 }
