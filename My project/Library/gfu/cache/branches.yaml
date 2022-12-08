@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-12-08T10:48:57.244+02:00
-  initializedAtString: 2022-12-08T10:48:57.154+02:00
+  lastUpdatedAtString: 2022-12-08T15:09:35.167+02:00
+  initializedAtString: 2022-12-08T14:26:16.808+02:00
   localBranches:
   - name: Carlos
     tracking: origin/Carlos
   - name: CarlosNew
-    tracking: 
+    tracking: origin/CarlosNew
   - name: main
     tracking: origin/main
   remoteBranches:
@@ -28,6 +28,8 @@ MonoBehaviour:
   - name: origin/akseli_new
     tracking: '[None]'
   - name: origin/Carlos
+    tracking: '[None]'
+  - name: origin/CarlosNew
     tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
@@ -56,9 +58,9 @@ MonoBehaviour:
       trackingBranch: Carlos
     - name: CarlosNew
       remote:
-        name: 
-        url: 
-      trackingBranch: 
+        name: origin
+        url: https://github.com/Hobitti/unity-demo
+      trackingBranch: CarlosNew
     - name: main
       remote:
         name: origin
@@ -72,6 +74,7 @@ MonoBehaviour:
       - Akseli
       - akseli_new
       - Carlos
+      - CarlosNew
       - HEAD
       - main
       - Oskari
@@ -88,6 +91,11 @@ MonoBehaviour:
           url: https://github.com/Hobitti/unity-demo
         trackingBranch: 
       - name: Carlos
+        remote:
+          name: origin
+          url: https://github.com/Hobitti/unity-demo
+        trackingBranch: 
+      - name: CarlosNew
         remote:
           name: origin
           url: https://github.com/Hobitti/unity-demo
