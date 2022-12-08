@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
     Rigidbody rb;
     CapsuleCollider cc;
     public TMP_Text hpAmmount;
+    public GameObject endScreen;
     float healt = 3;
 
     private void Start()
