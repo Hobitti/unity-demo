@@ -116,4 +116,34 @@ public class Player : MonoBehaviour
     {
         readyToJump = true;
     }
+<<<<<<< Updated upstream
+=======
+
+    public void damaged()
+    {
+        healt--;
+        hpAmmount.text = healt + "";
+        if (healt == 0)
+        {
+            transform.gameObject.SetActive(false);
+            endScreen.SetActive(true);
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<playerCamera>().freeMouse();
+
+        }
+    }
+    public void restatLvl()
+    {
+        Scene scene =SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
+    public void levelCompleted()
+    {
+        //&& FindObjectOfType<Slot>().item
+        if (rb.position.z <125)
+        {
+            FindObjectOfType<Timer>().LevelCompleted();
+            Debug.Log("It works!");
+        }
+    }
+>>>>>>> Stashed changes
 }
