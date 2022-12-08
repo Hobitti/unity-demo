@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
+
 public class Player : MonoBehaviour
 {
     [Header("Movement")]
@@ -10,31 +10,21 @@ public class Player : MonoBehaviour
 
     public float groundDrag;
 
-
-    //jump adributes
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
     bool readyToJump;
-    
+
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
-    private float crouchSpeed = 0.1f;
 
-
-
-    //hardset jump as space
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
 
-    //ground and height vars
     [Header("Ground Check")]
     public float playerHeight;
-    public float crouchHeight;
     public LayerMask whatIsGround;
     bool grounded;
-    bool cantStand;
-    bool _crouching;
 
     public Transform orientation;
 
@@ -44,17 +34,10 @@ public class Player : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-    float cc;
-   [SerializeField] GameObject inventory;
-    public TMP_Text hpAmmount;
-    public GameObject endScreen;
-    float healt = 3;
-    bool _inventory;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        cc = playerHeight;
         rb.freezeRotation = true;
 
         readyToJump = true;
@@ -63,49 +46,25 @@ public class Player : MonoBehaviour
     private void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1.4f + 0.3f, whatIsGround);
-        cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1.4f + 0.3f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+
         MyInput();
         SpeedControl();
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            _inventory = !_inventory;
-            inventory.SetActive(_inventory);
-        }
+
         // handle drag
         if (grounded)
             rb.drag = groundDrag;
         else
             rb.drag = 0;
-
-        //crouch check
-        if (!cantStand) _crouching = (Input.GetKey(KeyCode.C));
-
-
     }
 
     private void FixedUpdate()
     {
-        var desiredHeught = _crouching ? crouchHeight : playerHeight;
-        if (cc != desiredHeught)
-        {
-            adjustHeight(desiredHeught);
-        }
-
         MovePlayer();
-    }
-
-    private void adjustHeight(float desiredHeught)
-    {
-        float center = desiredHeught / 2;
-        cc = Mathf.Lerp(cc, desiredHeught, crouchSpeed);
-        transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1, center, 1), crouchSpeed);
-
     }
 
     private void MyInput()
     {
-        // get imput types from settings
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
@@ -122,21 +81,16 @@ public class Player : MonoBehaviour
 
     private void MovePlayer()
     {
-        float speed;
-
-        if (_crouching) speed = moveSpeed / 2;
-        else if (Input.GetKey(KeyCode.LeftShift)) speed = moveSpeed * 2;
-        else speed = moveSpeed;
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         // on ground
         if (grounded)
-            rb.AddForce(moveDirection.normalized * speed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
         // in air
         else if (!grounded)
-            rb.AddForce(moveDirection.normalized * speed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
     }
 
     private void SpeedControl()
@@ -162,6 +116,8 @@ public class Player : MonoBehaviour
     {
         readyToJump = true;
     }
+<<<<<<< Updated upstream
+=======
 
     public void damaged()
     {
@@ -180,4 +136,14 @@ public class Player : MonoBehaviour
         Scene scene =SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
     }
+    public void levelCompleted()
+    {
+        //&& FindObjectOfType<Slot>().item
+        if (rb.position.z <125)
+        {
+            FindObjectOfType<Timer>().LevelCompleted();
+            Debug.Log("It works!");
+        }
+    }
+>>>>>>> Stashed changes
 }

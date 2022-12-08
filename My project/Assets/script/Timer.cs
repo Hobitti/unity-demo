@@ -41,18 +41,9 @@ public class Timer : MonoBehaviour
 
             timerText.color = Color.red;
         }
-
-        if (timeValue == 60)
+        if (timeValue == 0)
         {
-            SoundManager.instance.PlaySingle(sound);
-        }
-        if (timeValue == 30)
-        {
-            SoundManager.instance.PlaySingle(sound);
-        }
-        if (timeValue == 10)
-        {
-            SoundManager.instance.PlaySingle(sound);
+            FindObjectOfType<SceneOpener>().LevelFailed();
         }
 
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
