@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     public float jumpCooldown;
     public float airMultiplier;
     bool readyToJump;
-
+    
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
     private float crouchSpeed = 0.1f;
@@ -45,9 +45,11 @@ public class Player : MonoBehaviour
 
     Rigidbody rb;
     float cc;
+   [SerializeField] GameObject inventory;
     public TMP_Text hpAmmount;
     public GameObject endScreen;
     float healt = 3;
+    bool _inventory;
 
     private void Start()
     {
@@ -65,7 +67,11 @@ public class Player : MonoBehaviour
         cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1.4f + 0.3f, whatIsGround);
         MyInput();
         SpeedControl();
-
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            _inventory = !_inventory;
+            inventory.SetActive(_inventory);
+        }
         // handle drag
         if (grounded)
             rb.drag = groundDrag;
