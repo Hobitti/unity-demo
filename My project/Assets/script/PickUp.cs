@@ -5,32 +5,39 @@ using UnityEngine;
 public class PickUp : MonoBehaviour
 {
 
-    public Transform Dest;
-
+    private Inventory inventory;
+    public GameObject item;
+    [SerializeField] Canvas Canvas;
+    bool cd= false;
     // Start is called before the first frame update
     void Start()
     {
-        
+
+        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            for (int i = 0; i < inventory.slots.Length; i++)
+            {
+                if (!inventory.isFull[i] && !cd)
+                {
+                    inventory.isFull[i] = true;
+                    Instantiate(item, inventory.slots[i].transform, false);
+                    Canvas.transform.GetChild(i).GetComponent<Slot>().item = gameObject;
+                    gameObject.SetActive(false);
+                    break;
+                }
+                
+            }
+            cd = false;
+        } 
     }
-
-    void OnMouseDown()
+    public void pickUpCD()
     {
-        GetComponent<Rigidbody>().useGravity = false;
-        this.transform.position = Dest.position;
-        this.transform.parent = GameObject.Find("Carry").transform;
-        GetComponent<Rigidbody>().isKinematic= true;
+        cd = true;
     }
-    void OnMouseUp()
-    {
-        this.transform.parent = null;
-        GetComponent<Rigidbody>().useGravity = true;
-        GetComponent<Rigidbody>().isKinematic = false;
-    }
-
 }

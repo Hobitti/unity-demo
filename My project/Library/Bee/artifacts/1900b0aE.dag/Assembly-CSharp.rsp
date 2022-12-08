@@ -358,12 +358,19 @@
 "Assets/script/ArrowTrap.cs"
 "Assets/script/camera.cs"
 "Assets/script/FireActivation.cs"
+"Assets/script/GameManager.cs"
 "Assets/script/GrappleHook.cs"
 "Assets/script/GrapplingHook.cs"
+"Assets/script/Inventory.cs"
 "Assets/script/PickUp.cs"
 "Assets/script/Player.cs"
 "Assets/script/playerCamera.cs"
+"Assets/script/RespawnScript.cs"
+"Assets/script/ShieldScript.cs"
+"Assets/script/Slot.cs"
+"Assets/script/SoundManager.cs"
 "Assets/script/SpikeDamage.cs"
+"Assets/script/Timer.cs"
 -langversion:9.0
 
 /deterministic
