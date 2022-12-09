@@ -27,7 +27,7 @@ public class Slot : MonoBehaviour
         foreach ( Transform child in transform)
         {
             GameObject.Destroy(child.gameObject);
-            item.SetActive(true);
+            item.GetComponent<Renderer>().enabled = true;
             item.GetComponent<PickUp>().pickUpCD();
             item.transform.position = GameObject.FindGameObjectWithTag("Player").transform.position;
             item.transform.position = new  Vector3(item.transform.position.x, 2f, item.transform.position.z);

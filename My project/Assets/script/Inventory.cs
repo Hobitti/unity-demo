@@ -6,12 +6,13 @@ public class Inventory : MonoBehaviour
 {
     public bool[] isFull;
     public GameObject[] slots;
+    public GameObject[] indicator;
     private int slotNumber;
-    [SerializeField] Canvas Canvas;
+    [SerializeField] GameObject Canvas;
     // Start is called before the first frame update
     void Start()
     {
-      
+        slotNumber = 0;
     }
 
     // Update is called once per frame
@@ -28,7 +29,7 @@ public class Inventory : MonoBehaviour
             updateSelectedSlot();
         }
         if (Input.GetKey(KeyCode.Alpha3))
-        { 
+        {
             slotNumber = 2;
             updateSelectedSlot();
         }
@@ -38,8 +39,8 @@ public class Inventory : MonoBehaviour
             updateSelectedSlot();
         }
 
-        if (Input.GetKey(KeyCode.Alpha5))                                       
-        {                                                                       
+        if (Input.GetKey(KeyCode.Alpha5))
+        {
             slotNumber = 4;
             updateSelectedSlot();
         }
@@ -47,12 +48,19 @@ public class Inventory : MonoBehaviour
         if (Input.GetKey(KeyCode.Q))
         {
             Canvas.transform.GetChild(slotNumber).GetComponent<Slot>().DropItem();
-                
+
         }
     }
 
     private void updateSelectedSlot()
     {
-        //todo add effect around selected slot
+        for (int i = 0; i < 5; i++)
+        {
+            if (i == slotNumber) indicator[i].SetActive(true);
+            else indicator[i].SetActive(false);
+        }
+
+
+
     }
 }

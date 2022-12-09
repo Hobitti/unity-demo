@@ -5,8 +5,8 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
 
-    public AudioSource sndEffect;
-    public AudioSource music;
+    [SerializeField] AudioSource sndEffect;
+    [SerializeField] AudioSource music;
 
     public static SoundManager instance = null;
 
