@@ -34,6 +34,13 @@ public class ArrowProjectile : MonoBehaviour
         {
             collision.transform.GetComponent<Player>().damaged();
         }
+        if (collision.collider.tag == "Shield")
+        {
+            Debug.Log("Blocked");
+            Destroy(gameObject,0.1f);
+            GameObject.Find("skull shield").GetComponent<ShieldScript>().hasBlocked = false;
+        }
+
     }
 
    

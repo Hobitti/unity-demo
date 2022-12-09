@@ -31,7 +31,7 @@ public class Activation : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.SetTrigger("activate");
-            other.transform.GetComponent<Player>().damaged();
+            
         }
     }
 }

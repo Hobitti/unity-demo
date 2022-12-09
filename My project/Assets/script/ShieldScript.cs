@@ -8,6 +8,10 @@ public class ShieldScript : MonoBehaviour
     public Transform rightHand;
     public GameObject item;
     public bool isEquipped;
+    private int timesHit=0;
+    public GameObject shield;
+    public bool hasBlocked;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -45,12 +49,30 @@ public class ShieldScript : MonoBehaviour
             itemRb = item.gameObject.GetComponent<Rigidbody>();
             itemRb.transform.parent = rightHand.transform;
             itemRb.isKinematic = true;
-            itemRb.detectCollisions = false;
+            itemRb.detectCollisions = true;
+           
 
 
         }
+        if (collision.gameObject.CompareTag("Arrow") && !hasBlocked)
+        {
+            hasBlocked = true;
+            timesHit +=1;
+            
+            Debug.Log(timesHit);
+
+            if (timesHit == 4)
+            {
+                Destroy(shield);
+            }
+
+        }
+
+        
 
 
     }
+
+
 
 }
