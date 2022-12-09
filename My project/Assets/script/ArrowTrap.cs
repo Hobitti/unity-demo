@@ -26,11 +26,12 @@ public class ArrowTrap : MonoBehaviour
         //    timeSinceSpawned = 0f;
         //}
     }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-
+            
             Instantiate(arrowProjectile, spawnLocation.position, spawnLocation.rotation);
 
         }

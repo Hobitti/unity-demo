@@ -6,9 +6,8 @@ public class Inventory : MonoBehaviour
 {
     public bool[] isFull;
     public GameObject[] slots;
-    public GameObject[] indicator;
     private int slotNumber;
-    [SerializeField] GameObject Canvas;
+    [SerializeField] Canvas Canvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,13 +53,6 @@ public class Inventory : MonoBehaviour
 
     private void updateSelectedSlot()
     {
-        for (int i = 0; i < 5; i++)
-        {
-            if (i == slotNumber) indicator[i].SetActive(true);
-            else indicator[i].SetActive(false);
-        }
-        
-        
-            
+        //todo add effect around selected slot
     }
 }
