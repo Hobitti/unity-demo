@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Activation : MonoBehaviour
 {
     public float damage;
+    public AudioSource audioSource;
     private Animator anim;
 
     // Start is called before the first frame update
@@ -31,6 +33,9 @@ public class Activation : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.SetTrigger("activate");
+            print(anim);
+            //other.transform.GetComponent<Player>().damaged();
+            audioSource.Play();
             
         }
     }

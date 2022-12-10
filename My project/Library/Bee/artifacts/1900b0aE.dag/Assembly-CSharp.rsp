@@ -366,11 +366,14 @@
 "Assets/script/Player.cs"
 "Assets/script/playerCamera.cs"
 "Assets/script/RespawnScript.cs"
+"Assets/script/SceneOpener.cs"
+"Assets/script/ShieldBrokenSound.cs"
 "Assets/script/ShieldScript.cs"
 "Assets/script/Slot.cs"
 "Assets/script/SoundManager.cs"
 "Assets/script/SpikeDamage.cs"
 "Assets/script/Timer.cs"
+"Assets/script/torch.cs"
 -langversion:9.0
 
 /deterministic

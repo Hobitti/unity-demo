@@ -5,12 +5,13 @@ using UnityEngine;
 public class ArrowProjectile : MonoBehaviour
 {
     public float velocity;
+    
 
 
 
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -23,7 +24,7 @@ public class ArrowProjectile : MonoBehaviour
     //    if (other.CompareTag("Player"))
     //    {
     //        print("You have been hit");
-            
+
 
     //    }
     //}
@@ -39,9 +40,10 @@ public class ArrowProjectile : MonoBehaviour
             Debug.Log("Blocked");
             Destroy(gameObject,0.1f);
             GameObject.Find("skull shield").GetComponent<ShieldScript>().hasBlocked = false;
+            GameObject.Find("skull shield (1)").GetComponent<ShieldScript>().hasBlocked = false;
         }
 
     }
 
-   
+
 }

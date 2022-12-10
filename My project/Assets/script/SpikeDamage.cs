@@ -19,27 +19,11 @@ public class SpikeDamage : MonoBehaviour
     }
 
     
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        Debug.Log("You have been Hit");
-    //        other.transform.GetComponent<Player>().damaged();
-    //    }
-    //}
-
-    public void OnCollisionStay(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        //Pick up item on key press, parent to hand and disable rigidbody
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-
             Debug.Log("You have been Hit");
-            collision.transform.GetComponent<Player>().damaged();
         }
-
     }
-
-
-    
 }

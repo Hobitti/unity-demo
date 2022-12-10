@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
+
 public class Player : MonoBehaviour
 {
     [Header("Movement")]
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
-    private float crouchSpeed = 0.1f;
+    private float crouchSpeed = 0.3f;
 
 
 
@@ -44,7 +44,7 @@ public class Player : MonoBehaviour
     Vector3 moveDirection;
 
     Rigidbody rb;
-    float cc;
+    CapsuleCollider cc;
     public TMP_Text hpAmmount;
     public GameObject endScreen;
     float healt = 3;
@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        cc = playerHeight;
+        cc = GetComponent<CapsuleCollider>();
         rb.freezeRotation = true;
 
         readyToJump = true;
@@ -61,8 +61,8 @@ public class Player : MonoBehaviour
     private void Update()
     {
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1.4f + 0.3f, whatIsGround);
-        cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1.4f + 0.3f, whatIsGround);
+        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.3f, whatIsGround);
+        cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1f + 0.3f, whatIsGround);
         MyInput();
         SpeedControl();
 
@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         var desiredHeught = _crouching ? crouchHeight : playerHeight;
-        if (cc != desiredHeught)
+        if (cc.height != desiredHeught)
         {
             adjustHeight(desiredHeught);
         }
@@ -92,7 +92,7 @@ public class Player : MonoBehaviour
     private void adjustHeight(float desiredHeught)
     {
         float center = desiredHeught / 2;
-        cc = Mathf.Lerp(cc, desiredHeught, crouchSpeed);
+        cc.height = Mathf.Lerp(cc.height, desiredHeught, crouchSpeed);
         transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1, center, 1), crouchSpeed);
 
     }
@@ -169,9 +169,14 @@ public class Player : MonoBehaviour
 
         }
     }
-    public void restatLvl()
+    public void levelCompleted()
     {
-        Scene scene =SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        //&& FindObjectOfType<Slot>().item
+        if (rb.position.z < 125)
+        {
+            FindObjectOfType<Timer>().LevelCompleted();
+            Debug.Log("It works!");
+        }
     }
+
 }

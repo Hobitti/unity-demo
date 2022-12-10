@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ArrowTrap : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ArrowTrap : MonoBehaviour
     public Quaternion spawnRotation;
     public float spawnTime = 0.5f;
     private float timeSinceSpawned = 0f;
+    public AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,14 +28,13 @@ public class ArrowTrap : MonoBehaviour
         //    timeSinceSpawned = 0f;
         //}
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            
-            Instantiate(arrowProjectile, spawnLocation.position, spawnLocation.rotation);
 
+            Instantiate(arrowProjectile, spawnLocation.position, spawnLocation.rotation);
+            audioSource.Play();
         }
     }
 }

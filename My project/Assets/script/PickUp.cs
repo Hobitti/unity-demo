@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
@@ -9,6 +10,9 @@ public class PickUp : MonoBehaviour
     public GameObject item;
     [SerializeField] Canvas Canvas;
     bool cd= false;
+
+    [SerializeField]
+    AudioClip sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +25,8 @@ public class PickUp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            SoundManager.instance.PlaySingle(sound);
+
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 if (!inventory.isFull[i] && !cd)

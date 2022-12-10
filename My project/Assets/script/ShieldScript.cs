@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class ShieldScript : MonoBehaviour
 {
@@ -8,10 +9,12 @@ public class ShieldScript : MonoBehaviour
     public Transform rightHand;
     public GameObject item;
     public bool isEquipped;
-    private int timesHit=0;
+    private int timesHit = 0;
     public GameObject shield;
     public bool hasBlocked;
-   
+    public AudioSource audioSource;
+    public AudioSource shieldPickup;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,25 +53,29 @@ public class ShieldScript : MonoBehaviour
             itemRb.transform.parent = rightHand.transform;
             itemRb.isKinematic = true;
             itemRb.detectCollisions = true;
-           
+            hasBlocked = false;
+            shieldPickup.Play();
 
 
         }
         if (collision.gameObject.CompareTag("Arrow") && !hasBlocked)
         {
             hasBlocked = true;
-            timesHit +=1;
-            
+            timesHit += 1;
+
             Debug.Log(timesHit);
 
-            if (timesHit == 4)
+
+            if (timesHit == 5)
             {
+                hasBlocked = false;
+                audioSource.Play();
                 Destroy(shield);
             }
 
         }
 
-        
+
 
 
     }
