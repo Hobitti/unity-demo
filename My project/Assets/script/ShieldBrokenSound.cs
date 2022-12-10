@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
-public class SpikeDamage : MonoBehaviour
+public class ShieldBrokenSound : MonoBehaviour
 {
-    
-
+    public AudioSource audioSource;
+    public GameObject item;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +16,10 @@ public class SpikeDamage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-    }
-
-    
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if(item == null)
         {
-            Debug.Log("You have been Hit");
+            Debug.Log("Shield has been destroyed");
+            audioSource.Play();
         }
     }
 }
