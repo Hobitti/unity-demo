@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2022-12-08T15:09:34.075+02:00
-  initializedAtString: 2022-12-08T13:35:20.559+02:00
+  lastUpdatedAtString: 2022-12-09T10:31:27.826+02:00
+  initializedAtString: 2022-12-09T10:31:27.826+02:00
   currentGitRemote:
     name: origin
     url: https://github.com/Hobitti/unity-demo
