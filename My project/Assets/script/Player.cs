@@ -76,6 +76,7 @@ public class Player : MonoBehaviour
         //crouch check
         if (!cantStand) _crouching = (Input.GetKey(KeyCode.C));
 
+        if (Input.GetKey(KeyCode.Escape)) close();
 
     }
 
@@ -181,6 +182,10 @@ public class Player : MonoBehaviour
             GameObject.FindGameObjectWithTag("Item").GetComponent<PickUp>().LevelCompleted();
             Debug.Log("It works!");
         }
+    }
+    private void close()
+    {
+        Application.Quit();
     }
 
 }
