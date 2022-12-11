@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Camera
+  - Arrow
+  - inventory
+  - Hook
+  - Fire
+  - Item
   layers:
   - Default
   - TransparentFX

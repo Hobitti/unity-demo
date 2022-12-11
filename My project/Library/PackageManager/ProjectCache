@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638059117678170029
+      ticks: 638061019130988398
     m_Hash: 618607993
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -383,9 +383,11 @@ m_ResolvedPackages:
     - 2.0.14
     - 2.0.15
     - 2.0.16
+    - 2.0.17
     compatible:
     - 2.0.16
-    verified: 2.0.16
+    - 2.0.17
+    verified: 2.0.17
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -1015,8 +1017,10 @@ m_ResolvedPackages:
     - 1.7.7
     - 1.7.8
     - 1.8.0-pre.1
+    - 1.8.0
     compatible:
     - 1.7.8
+    - 1.8.0
     verified: 1.7.8
   dependencies:
   - name: com.unity.ugui

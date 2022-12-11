@@ -49,10 +49,10 @@ public class ShieldScript : MonoBehaviour
             isEquipped = true;
 
 
-            itemRb = item.gameObject.GetComponent<Rigidbody>();
+            itemRb = item.gameObject.GetComponentInParent<Rigidbody>();
             itemRb.transform.parent = rightHand.transform;
             itemRb.isKinematic = true;
-            itemRb.detectCollisions = true;
+            itemRb.detectCollisions = false;
             hasBlocked = false;
             shieldPickup.Play();
 

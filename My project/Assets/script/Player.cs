@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -62,7 +63,7 @@ public class Player : MonoBehaviour
     {
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 1f + 0.3f, whatIsGround);
-        cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 1f + 0.3f, whatIsGround);
+        cantStand = Physics.Raycast(transform.position, Vector3.up, playerHeight * 0.5f + 0.3f, whatIsGround);
         MyInput();
         SpeedControl();
 
@@ -166,15 +167,18 @@ public class Player : MonoBehaviour
             transform.gameObject.SetActive(false);
             endScreen.SetActive(true);
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<playerCamera>().freeMouse();
+            SceneManager.LoadScene("LevelFailed");
 
         }
     }
     public void levelCompleted()
     {
+        Debug.Log("wtf");
         //&& FindObjectOfType<Slot>().item
         if (rb.position.z < 125)
         {
-            FindObjectOfType<Timer>().LevelCompleted();
+
+            GameObject.FindGameObjectWithTag("Item").GetComponent<PickUp>().LevelCompleted();
             Debug.Log("It works!");
         }
     }

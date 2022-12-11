@@ -43,7 +43,7 @@ public class Timer : MonoBehaviour
         }
         if (timeValue == 0)
         {
-            FindObjectOfType<SceneOpener>().LevelFailed();
+            //FindObjectOfType<SceneOpener>().LevelFailed();
         }
 
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);

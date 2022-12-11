@@ -33,7 +33,7 @@ public class Activation : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             anim.SetTrigger("activate");
-            print(anim);
+           // print(anim);
             //other.transform.GetComponent<Player>().damaged();
             audioSource.Play();
             

@@ -16,7 +16,7 @@ public class PickUp : MonoBehaviour
 
     public float timeValue = 181;
     public TextMeshProUGUI timerText;
-    private bool completed = false;
+    public bool completed = false;
     public bool StartTimer = false;
 
     [SerializeField]
@@ -49,24 +49,36 @@ public class PickUp : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        bool notPicked=true;
         print(other.tag);
 
         if (other.CompareTag("Player"))
         {
             StartTimer = true;
-            //SoundManager.instance.PlaySingle(sound);
+            SoundManager.instance.PlaySingle(sound);
 
             for (int i = 0; i < inventory.slots.Length; i++)
             {
-                if (!inventory.isFull[i] && !cd)
+                for (int k = 0; k < inventory.slots.Length; k++)
                 {
-                    inventory.isFull[i] = true;
-                    Instantiate(item, inventory.slots[i].transform, false);
-                    Canvas.transform.GetChild(i).GetComponent<Slot>().item = gameObject;
-                    GetComponent<Renderer>().enabled = false;
-                    break;
-                }
+                    //check taht item not picked alerty
+                    if (Canvas.transform.GetChild(k).GetComponent<Slot>().item == gameObject)
+                    {
+                        notPicked = false;
+                        break;
+                    }
+                    //check for empty inv slot
+                    if (!inventory.isFull[i] && !cd && notPicked)
+                    {
+                        inventory.isFull[i] = true;
+                        Instantiate(item, inventory.slots[i].transform, false);
+                        Canvas.transform.GetChild(i).GetComponent<Slot>().item = gameObject;
+                        GetComponent<Renderer>().enabled = false;
+                        break;
+                    }
 
+
+                }
             }
             cd = false;
         }
@@ -102,7 +114,7 @@ public class PickUp : MonoBehaviour
         if (completed == false)
         {
             completed = true;
-            SceneManager.LoadScene("LevelCompleted");
+            SceneManager.LoadScene("LevelCompleted"); 
         }
     }
 }

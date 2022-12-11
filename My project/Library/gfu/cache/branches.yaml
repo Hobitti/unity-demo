@@ -13,21 +13,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2022-12-06T13:41:07.012+02:00
-  initializedAtString: 2022-12-06T13:41:06.954+02:00
+  lastUpdatedAtString: 2022-12-11T15:46:55.376+02:00
+  initializedAtString: 2022-12-11T15:13:21.481+02:00
   localBranches:
-  - name: Akseli
-    tracking: origin/Akseli
-  - name: Carlos
-    tracking: origin/Carlos
+  - name: akseli_new
+    tracking: origin/akseli_new
+  - name: CarlosNew
+    tracking: origin/CarlosNew
   - name: main
     tracking: origin/main
   - name: Oskari
     tracking: origin/Oskari
   remoteBranches:
-  - name: origin/Akseli
+  - name: origin/akseli-new
     tracking: '[None]'
-  - name: origin/Carlos
+  - name: origin/build
+    tracking: '[None]'
+  - name: origin/CarlosNew
     tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
@@ -45,21 +47,21 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - Akseli
-    - Carlos
+    - akseli_new
+    - CarlosNew
     - main
     - Oskari
     values:
-    - name: Akseli
+    - name: akseli_new
       remote:
         name: origin
         url: https://github.com/Hobitti/unity-demo.git
-      trackingBranch: Akseli
-    - name: Carlos
+      trackingBranch: akseli_new
+    - name: CarlosNew
       remote:
         name: origin
         url: https://github.com/Hobitti/unity-demo.git
-      trackingBranch: Carlos
+      trackingBranch: CarlosNew
     - name: main
       remote:
         name: origin
@@ -75,19 +77,25 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
-      - Akseli
-      - Carlos
+      - akseli-new
+      - build
+      - CarlosNew
       - HEAD
       - main
       - Oskari
     subKeyValues:
     - Values:
-      - name: Akseli
+      - name: akseli-new
         remote:
           name: origin
           url: https://github.com/Hobitti/unity-demo.git
         trackingBranch: 
-      - name: Carlos
+      - name: build
+        remote:
+          name: origin
+          url: https://github.com/Hobitti/unity-demo.git
+        trackingBranch: 
+      - name: CarlosNew
         remote:
           name: origin
           url: https://github.com/Hobitti/unity-demo.git

@@ -62,13 +62,18 @@
     <Compile Include="Assets\script\camera.cs" />
     <Compile Include="Assets\script\ArrowTrap.cs" />
     <Compile Include="Assets\script\ArrowProjectile.cs" />
+    <Compile Include="Assets\script\torch.cs" />
     <Compile Include="Assets\script\RespawnScript.cs" />
+    <Compile Include="Assets\script\ShieldBrokenSound.cs" />
     <Compile Include="Assets\script\SoundManager.cs" />
+    <Compile Include="Assets\script\ending.cs" />
+    <Compile Include="Assets\script\ShieldScript.cs" />
     <Compile Include="Assets\script\Activation.cs" />
     <Compile Include="Assets\script\Slot.cs" />
     <Compile Include="Assets\script\GrapplingHook.cs" />
     <Compile Include="Assets\script\SpikeDamage.cs" />
     <Compile Include="Assets\script\PickUp.cs" />
+    <Compile Include="Assets\script\SceneOpener.cs" />
     <Compile Include="Assets\script\FireActivation.cs" />
     <Compile Include="Assets\script\Timer.cs" />
     <Compile Include="Assets\script\GameManager.cs" />
@@ -91,6 +96,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

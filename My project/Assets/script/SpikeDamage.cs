@@ -18,12 +18,13 @@ public class SpikeDamage : MonoBehaviour
 
     }
 
-    
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision collision)//dmg trigger    
     {
-        if (other.CompareTag("Player"))
+        print("test");
+        if (collision.transform.CompareTag("Player"))
         {
-            Debug.Log("You have been Hit");
+            collision.transform.GetComponent<Player>().damaged();
         }
     }
 }

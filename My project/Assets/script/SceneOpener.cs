@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneOpener : MonoBehaviour
 {
 
-    public void StartMenu()
+    public void StartMenu()//scenes
     {
         SceneManager.LoadScene("StartMenu");
     }
