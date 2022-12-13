@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour
     public GameObject[] indicator;
     private int slotNumber;
     [SerializeField] GameObject Canvas;
+    bool _inventory = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,11 @@ public class Inventory : MonoBehaviour
         {
             Canvas.transform.GetChild(slotNumber).GetComponent<Slot>().DropItem();
 
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            _inventory = !_inventory;
+            Canvas.SetActive(_inventory);
         }
     }
 

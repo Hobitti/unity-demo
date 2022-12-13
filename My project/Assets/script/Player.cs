@@ -49,6 +49,7 @@ public class Player : MonoBehaviour
     public TMP_Text hpAmmount;
     public GameObject endScreen;
     float healt = 3;
+    bool _inventory =true;
 
     private void Start()
     {
@@ -75,8 +76,8 @@ public class Player : MonoBehaviour
 
         //crouch check
         if (!cantStand) _crouching = (Input.GetKey(KeyCode.C));
-
         if (Input.GetKey(KeyCode.Escape)) close();
+ 
 
     }
 
