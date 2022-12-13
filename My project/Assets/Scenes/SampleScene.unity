@@ -904,11 +904,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &200540720 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5231886219341896455, guid: fd6a6d7bd3203ee4ab8c30bc52709929, type: 3}
-  m_PrefabInstance: {fileID: 2879511652404495396}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &202250859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11448,7 +11443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1729305794
 Transform:
   m_ObjectHideFlags: 0
@@ -11473,16 +11468,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729305792}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a04b926f4f9c2a744a4cd40549c3caf4, type: 3}
+  m_Script: {fileID: 11500000, guid: 1323c11deb6a6e5469b9735e16f1d32e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 200540720}
-  Canvas: {fileID: 1821721323}
-  timeValue: 181
   timerText: {fileID: 289115466}
-  completed: 0
-  StartTimer: 0
-  sound: {fileID: 8300000, guid: d358dedf9a8dc4d48b80e343eb501935, type: 3}
 --- !u!1 &1735854991 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1137482928756000253, guid: 854a0113fb1e0ce4aa63ff88e8fe190b, type: 3}

@@ -20,13 +20,14 @@ public class ending : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print(other.tag);
-       bool completed= GameObject.FindGameObjectWithTag("Item").GetComponent<PickUp>().StartTimer;
-        if (other.tag == ("Player")&& completed)
+        bool completed = GameObject.FindGameObjectWithTag("Item").GetComponent<PickUp>().StartTimer;
+        if (other.tag == ("Player") && completed)
         {
             print("hey");
             player.GetComponent<Player>().levelCompleted();
+            GameObject.FindGameObjectWithTag("Item").GetComponent<PickUp>().StopTime();
         }
     }
 
 
-}
+    }

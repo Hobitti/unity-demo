@@ -13,24 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2022-12-13T12:05:55.797+02:00
-  initializedAtString: 2022-12-13T11:53:07.814+02:00
+  lastUpdatedAtString: 2022-12-13T13:41:35.136+02:00
+  initializedAtString: 2022-12-13T13:25:56.143+02:00
   entries:
-  - path: My project\.vs\My project\v16\.suo
-    fullPath: D:\git\unity-demo\My project\.vs\My project\v16\.suo
-    projectPath: .vs\My project\v16\.suo
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: My project\Assets\Prefab\PlayerUi 1.prefab
     fullPath: D:\git\unity-demo\My project\Assets\Prefab\PlayerUi 1.prefab
     projectPath: Assets\Prefab\PlayerUi 1.prefab
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: My project\Assets\Prefab\torch 1.prefab
-    fullPath: D:\git\unity-demo\My project\Assets\Prefab\torch 1.prefab
-    projectPath: Assets\Prefab\torch 1.prefab
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -40,51 +28,57 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: My project\Assets\script\Inventory.cs
-    fullPath: D:\git\unity-demo\My project\Assets\script\Inventory.cs
-    projectPath: Assets\script\Inventory.cs
+  - path: My project\Assets\script\ending.cs
+    fullPath: D:\git\unity-demo\My project\Assets\script\ending.cs
+    projectPath: Assets\script\ending.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: My project\Assets\script\Player.cs
-    fullPath: D:\git\unity-demo\My project\Assets\script\Player.cs
-    projectPath: Assets\script\Player.cs
+  - path: My project\Assets\script\PickUp.cs
+    fullPath: D:\git\unity-demo\My project\Assets\script\PickUp.cs
+    projectPath: Assets\script\PickUp.cs
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: My project\Assets\Sounds\Escape_Route_-_www.FesliyanStudios.com.mp3
-    fullPath: D:\git\unity-demo\My project\Assets\Sounds\Escape_Route_-_www.FesliyanStudios.com.mp3
-    projectPath: Assets\Sounds\Escape_Route_-_www.FesliyanStudios.com.mp3
+  - path: My project\Assets\script\Timer.cs
+    fullPath: D:\git\unity-demo\My project\Assets\script\Timer.cs
+    projectPath: Assets\script\Timer.cs
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Assets\Sounds\Escape_Route_-_www.FesliyanStudios.com.mp3.meta
-    fullPath: D:\git\unity-demo\My project\Assets\Sounds\Escape_Route_-_www.FesliyanStudios.com.mp3.meta
-    projectPath: Assets\Sounds\Escape_Route_-_www.FesliyanStudios.com.mp3.meta
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: My project\Library\ArtifactDB
     fullPath: D:\git\unity-demo\My project\Library\ArtifactDB
     projectPath: Library\ArtifactDB
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
+  - path: My project\Library\Artifacts\03\03d1cc5a42ded0fdb2454624c48edd08
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\03\03d1cc5a42ded0fdb2454624c48edd08
+    projectPath: Library\Artifacts\03\03d1cc5a42ded0fdb2454624c48edd08
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: My project\Library\Artifacts\08\0810468f4a1066bd73ef83e985e49d28
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\08\0810468f4a1066bd73ef83e985e49d28
     projectPath: Library\Artifacts\08\0810468f4a1066bd73ef83e985e49d28
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\09\0953096ce357aa495457d909d3e6ffd8
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\09\0953096ce357aa495457d909d3e6ffd8
-    projectPath: Library\Artifacts\09\0953096ce357aa495457d909d3e6ffd8
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: My project\Library\Artifacts\09\095c686e9114405f2a069b1070c5bda8
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\09\095c686e9114405f2a069b1070c5bda8
     projectPath: Library\Artifacts\09\095c686e9114405f2a069b1070c5bda8
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\0a\0a190773e296f94833aedb297c864e93
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\0a\0a190773e296f94833aedb297c864e93
+    projectPath: Library\Artifacts\0a\0a190773e296f94833aedb297c864e93
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: My project\Library\Artifacts\10\106447fe4ef03165916bd8f2f93a4346
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\10\106447fe4ef03165916bd8f2f93a4346
+    projectPath: Library\Artifacts\10\106447fe4ef03165916bd8f2f93a4346
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -92,65 +86,77 @@ MonoBehaviour:
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\11\11740abb827defdad01a3a6739792f79
     projectPath: Library\Artifacts\11\11740abb827defdad01a3a6739792f79
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\22\225b856d339f819ef4f439c32bd8637c
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\22\225b856d339f819ef4f439c32bd8637c
-    projectPath: Library\Artifacts\22\225b856d339f819ef4f439c32bd8637c
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\13\138efd6192670e5b21d033fa3a0c9f00
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\13\138efd6192670e5b21d033fa3a0c9f00
+    projectPath: Library\Artifacts\13\138efd6192670e5b21d033fa3a0c9f00
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\Library\Artifacts\22\22a17aa19d869f2cd4831e97bfcd746d
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\22\22a17aa19d869f2cd4831e97bfcd746d
-    projectPath: Library\Artifacts\22\22a17aa19d869f2cd4831e97bfcd746d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\25\257b99fd9cd8d6611b9abae827e7a860
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\25\257b99fd9cd8d6611b9abae827e7a860
-    projectPath: Library\Artifacts\25\257b99fd9cd8d6611b9abae827e7a860
+  - path: My project\Library\Artifacts\2b\2bd0b8df04045dd145780f1c73503353
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\2b\2bd0b8df04045dd145780f1c73503353
+    projectPath: Library\Artifacts\2b\2bd0b8df04045dd145780f1c73503353
     originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: My project\Library\Artifacts\26\2655fee386bac7ee13c2e796e892183a
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\26\2655fee386bac7ee13c2e796e892183a
-    projectPath: Library\Artifacts\26\2655fee386bac7ee13c2e796e892183a
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 5
-  - path: My project\Library\Artifacts\2b\2b040d93583c17ffa995c4e0485b5bbb
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\2b\2b040d93583c17ffa995c4e0485b5bbb
-    projectPath: Library\Artifacts\2b\2b040d93583c17ffa995c4e0485b5bbb
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: My project\Library\Artifacts\2d\2d7da417659b2eb6e4efcb0fce68abf4
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\2d\2d7da417659b2eb6e4efcb0fce68abf4
     projectPath: Library\Artifacts\2d\2d7da417659b2eb6e4efcb0fce68abf4
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\32\32a6400aeddd01b18b19b177b7dfcd39
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\32\32a6400aeddd01b18b19b177b7dfcd39
+    projectPath: Library\Artifacts\32\32a6400aeddd01b18b19b177b7dfcd39
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: My project\Library\Artifacts\32\32defb84754f00ee08e3fdee6f5623ae
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\32\32defb84754f00ee08e3fdee6f5623ae
     projectPath: Library\Artifacts\32\32defb84754f00ee08e3fdee6f5623ae
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\33\330a0009830bca2e06bdbddbe9c507f8
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\33\330a0009830bca2e06bdbddbe9c507f8
-    projectPath: Library\Artifacts\33\330a0009830bca2e06bdbddbe9c507f8
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\34\34c9a192f6eea1fcb1cdf70c548f899b
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\34\34c9a192f6eea1fcb1cdf70c548f899b
+    projectPath: Library\Artifacts\34\34c9a192f6eea1fcb1cdf70c548f899b
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: My project\Library\Artifacts\35\35888260d7094ff3b66c5c29438481ee
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\35\35888260d7094ff3b66c5c29438481ee
+    projectPath: Library\Artifacts\35\35888260d7094ff3b66c5c29438481ee
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: My project\Library\Artifacts\36\3669bdb5b1831d568b2f2063b6e56302
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\36\3669bdb5b1831d568b2f2063b6e56302
+    projectPath: Library\Artifacts\36\3669bdb5b1831d568b2f2063b6e56302
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
   - path: My project\Library\Artifacts\38\38a7cbe0d3912a35006c2c79f7a99824
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\38\38a7cbe0d3912a35006c2c79f7a99824
     projectPath: Library\Artifacts\38\38a7cbe0d3912a35006c2c79f7a99824
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: My project\Library\Artifacts\3c\3c568824b62075e4de5ec7dbe573d6e1
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\3c\3c568824b62075e4de5ec7dbe573d6e1
     projectPath: Library\Artifacts\3c\3c568824b62075e4de5ec7dbe573d6e1
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\3d\3dc76fa556133b3645f548b0135e88f3
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\3d\3dc76fa556133b3645f548b0135e88f3
+    projectPath: Library\Artifacts\3d\3dc76fa556133b3645f548b0135e88f3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: My project\Library\Artifacts\43\434b14f758154054a72374506714c857
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\43\434b14f758154054a72374506714c857
+    projectPath: Library\Artifacts\43\434b14f758154054a72374506714c857
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -158,35 +164,59 @@ MonoBehaviour:
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\43\43bde847d081e3b5c43470355b35fce5
     projectPath: Library\Artifacts\43\43bde847d081e3b5c43470355b35fce5
     originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\47\47d7ec46430808326f0861d8372eb5ad
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\47\47d7ec46430808326f0861d8372eb5ad
+    projectPath: Library\Artifacts\47\47d7ec46430808326f0861d8372eb5ad
+    originalPath: 
     indexStatus: 1
     workTreeStatus: 1
   - path: My project\Library\Artifacts\4d\4dc3ad8a8dc612ecc13ba6fadacda51e
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\4d\4dc3ad8a8dc612ecc13ba6fadacda51e
     projectPath: Library\Artifacts\4d\4dc3ad8a8dc612ecc13ba6fadacda51e
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\55\554491daf59986888afbe5d00d6c9002
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\55\554491daf59986888afbe5d00d6c9002
-    projectPath: Library\Artifacts\55\554491daf59986888afbe5d00d6c9002
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\60\60840143e2cea429b7d884092fa3d9c8
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\60\60840143e2cea429b7d884092fa3d9c8
+    projectPath: Library\Artifacts\60\60840143e2cea429b7d884092fa3d9c8
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\Library\Artifacts\56\5693e47ee57bd439851fe10a24ca4040
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\56\5693e47ee57bd439851fe10a24ca4040
-    projectPath: Library\Artifacts\56\5693e47ee57bd439851fe10a24ca4040
+  - path: My project\Library\Artifacts\6b\6b3ac6bcb93272c1704aa0d767ae719f
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\6b\6b3ac6bcb93272c1704aa0d767ae719f
+    projectPath: Library\Artifacts\6b\6b3ac6bcb93272c1704aa0d767ae719f
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\71\7194d4e3cdd8d095cea9c581babca8ba
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\71\7194d4e3cdd8d095cea9c581babca8ba
+    projectPath: Library\Artifacts\71\7194d4e3cdd8d095cea9c581babca8ba
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\Library\Artifacts\6f\6f89cd0a5e2fff81f2efb2ca751638b5
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\6f\6f89cd0a5e2fff81f2efb2ca751638b5
-    projectPath: Library\Artifacts\6f\6f89cd0a5e2fff81f2efb2ca751638b5
+  - path: My project\Library\Artifacts\75\75076adaee70e4c768efa2d09d9fbefa
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\75\75076adaee70e4c768efa2d09d9fbefa
+    projectPath: Library\Artifacts\75\75076adaee70e4c768efa2d09d9fbefa
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\Library\Artifacts\84\84d4277a288944a0b311f0f7acf10b64
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\84\84d4277a288944a0b311f0f7acf10b64
-    projectPath: Library\Artifacts\84\84d4277a288944a0b311f0f7acf10b64
+  - path: My project\Library\Artifacts\7a\7a4f24e4b63559910729086f595d7328
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\7a\7a4f24e4b63559910729086f595d7328
+    projectPath: Library\Artifacts\7a\7a4f24e4b63559910729086f595d7328
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: My project\Library\Artifacts\7e\7eb14affe91b981f748f132edb4e0ef5
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\7e\7eb14affe91b981f748f132edb4e0ef5
+    projectPath: Library\Artifacts\7e\7eb14affe91b981f748f132edb4e0ef5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: My project\Library\Artifacts\83\83b896cb514dce7432aed0cf24bdc9ed
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\83\83b896cb514dce7432aed0cf24bdc9ed
+    projectPath: Library\Artifacts\83\83b896cb514dce7432aed0cf24bdc9ed
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -194,77 +224,41 @@ MonoBehaviour:
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\85\85cb73173f90597c7f69bc7989406147
     projectPath: Library\Artifacts\85\85cb73173f90597c7f69bc7989406147
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\88\8846cb0564c19cdda3d5cda3e3bc58ed
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\88\8846cb0564c19cdda3d5cda3e3bc58ed
-    projectPath: Library\Artifacts\88\8846cb0564c19cdda3d5cda3e3bc58ed
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\88\885d12f389970fd1a91007ecf22590eb
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\88\885d12f389970fd1a91007ecf22590eb
-    projectPath: Library\Artifacts\88\885d12f389970fd1a91007ecf22590eb
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: My project\Library\Artifacts\a0\a07dda02e85703290dee02881d61b921
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\a0\a07dda02e85703290dee02881d61b921
-    projectPath: Library\Artifacts\a0\a07dda02e85703290dee02881d61b921
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: My project\Library\Artifacts\a8\a8d4eeb8b93d8aaf8a0a64d385cb40fb
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\a8\a8d4eeb8b93d8aaf8a0a64d385cb40fb
     projectPath: Library\Artifacts\a8\a8d4eeb8b93d8aaf8a0a64d385cb40fb
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: My project\Library\Artifacts\ab\ab57f76045c4b5894466b962e68a0a58
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\ab\ab57f76045c4b5894466b962e68a0a58
     projectPath: Library\Artifacts\ab\ab57f76045c4b5894466b962e68a0a58
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\b2\b211a31233ff0676c28aead9e6eb84d6
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\b2\b211a31233ff0676c28aead9e6eb84d6
-    projectPath: Library\Artifacts\b2\b211a31233ff0676c28aead9e6eb84d6
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\b4\b44ae66f3cf10d6728426e53f933c39a
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\b4\b44ae66f3cf10d6728426e53f933c39a
-    projectPath: Library\Artifacts\b4\b44ae66f3cf10d6728426e53f933c39a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\bf\bf640a95ebf05bd3c586534109f60c0a
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\bf\bf640a95ebf05bd3c586534109f60c0a
-    projectPath: Library\Artifacts\bf\bf640a95ebf05bd3c586534109f60c0a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: My project\Library\Artifacts\c1\c17362dca8a5449bfc779a8ac7283e7c
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\c1\c17362dca8a5449bfc779a8ac7283e7c
     projectPath: Library\Artifacts\c1\c17362dca8a5449bfc779a8ac7283e7c
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: My project\Library\Artifacts\c3\c3eb36877ab2771896bc5249b4acdfab
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\c3\c3eb36877ab2771896bc5249b4acdfab
     projectPath: Library\Artifacts\c3\c3eb36877ab2771896bc5249b4acdfab
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\d0\d0d2c4aee4c8b64c5d40e588ed35ca86
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\d0\d0d2c4aee4c8b64c5d40e588ed35ca86
-    projectPath: Library\Artifacts\d0\d0d2c4aee4c8b64c5d40e588ed35ca86
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: My project\Library\Artifacts\df\dfac233701562e559b6587ede3eff6ba
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\df\dfac233701562e559b6587ede3eff6ba
+    projectPath: Library\Artifacts\df\dfac233701562e559b6587ede3eff6ba
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\Library\Artifacts\d3\d3515a44b89595b549c7c8baf786d784
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\d3\d3515a44b89595b549c7c8baf786d784
-    projectPath: Library\Artifacts\d3\d3515a44b89595b549c7c8baf786d784
+  - path: My project\Library\Artifacts\e0\e0c68af394159422759f9ff81ee24fd1
+    fullPath: D:\git\unity-demo\My project\Library\Artifacts\e0\e0c68af394159422759f9ff81ee24fd1
+    projectPath: Library\Artifacts\e0\e0c68af394159422759f9ff81ee24fd1
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -272,26 +266,8 @@ MonoBehaviour:
     fullPath: D:\git\unity-demo\My project\Library\Artifacts\e5\e59472afc2354112034dcf77d6b0cc6c
     projectPath: Library\Artifacts\e5\e59472afc2354112034dcf77d6b0cc6c
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\f5\f57bc6e355cae300096ade1306733b62
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\f5\f57bc6e355cae300096ade1306733b62
-    projectPath: Library\Artifacts\f5\f57bc6e355cae300096ade1306733b62
-    originalPath: 
     indexStatus: 0
     workTreeStatus: 5
-  - path: My project\Library\Artifacts\f6\f6fe5bf8545cd1ce9618d1a89526251b
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\f6\f6fe5bf8545cd1ce9618d1a89526251b
-    projectPath: Library\Artifacts\f6\f6fe5bf8545cd1ce9618d1a89526251b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: My project\Library\Artifacts\f8\f8d607eda302c15e99dc090ff937fc32
-    fullPath: D:\git\unity-demo\My project\Library\Artifacts\f8\f8d607eda302c15e99dc090ff937fc32
-    projectPath: Library\Artifacts\f8\f8d607eda302c15e99dc090ff937fc32
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: My project\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
     fullPath: D:\git\unity-demo\My project\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
     projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.dll
@@ -301,6 +277,12 @@ MonoBehaviour:
   - path: My project\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.pdb
     fullPath: D:\git\unity-demo\My project\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.pdb
     projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.pdb
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: My project\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
+    fullPath: D:\git\unity-demo\My project\Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
+    projectPath: Library\Bee\artifacts\1900b0aE.dag\Assembly-CSharp.ref.dll
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -376,12 +358,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: My project\Library\InspectorExpandedItems.asset
-    fullPath: D:\git\unity-demo\My project\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: My project\Library\SceneVisibilityState.asset
     fullPath: D:\git\unity-demo\My project\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
@@ -424,33 +400,9 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
-  - path: My project\Library\StateCache\PrefabStageHierarchy\d3\d3350618da5e203259c151ebd1c43ffc.json
-    fullPath: D:\git\unity-demo\My project\Library\StateCache\PrefabStageHierarchy\d3\d3350618da5e203259c151ebd1c43ffc.json
-    projectPath: Library\StateCache\PrefabStageHierarchy\d3\d3350618da5e203259c151ebd1c43ffc.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: My project\Library\StateCache\PrefabStageHierarchy\f2\f24de8243604e401f45de3f06e09bbf5.json
-    fullPath: D:\git\unity-demo\My project\Library\StateCache\PrefabStageHierarchy\f2\f24de8243604e401f45de3f06e09bbf5.json
-    projectPath: Library\StateCache\PrefabStageHierarchy\f2\f24de8243604e401f45de3f06e09bbf5.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: My project\Library\StateCache\SceneView\7d\7da034cfd6026c44c6c970915898b519.json
-    fullPath: D:\git\unity-demo\My project\Library\StateCache\SceneView\7d\7da034cfd6026c44c6c970915898b519.json
-    projectPath: Library\StateCache\SceneView\7d\7da034cfd6026c44c6c970915898b519.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: My project\Library\StateCache\SceneView\8c\8cd7c613bf844de3b80696e27a479d5e.json
     fullPath: D:\git\unity-demo\My project\Library\StateCache\SceneView\8c\8cd7c613bf844de3b80696e27a479d5e.json
     projectPath: Library\StateCache\SceneView\8c\8cd7c613bf844de3b80696e27a479d5e.json
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
-  - path: My project\Library\StateCache\SceneView\db\db636bb203ee24d5ad88c0c0dcc8d189.json
-    fullPath: D:\git\unity-demo\My project\Library\StateCache\SceneView\db\db636bb203ee24d5ad88c0c0dcc8d189.json
-    projectPath: Library\StateCache\SceneView\db\db636bb203ee24d5ad88c0c0dcc8d189.json
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -464,8 +416,8 @@ MonoBehaviour:
     fullPath: D:\git\unity-demo\My project\Logs\AssetImportWorker0-prev.log
     projectPath: Logs\AssetImportWorker0-prev.log
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: My project\Logs\shadercompiler-AssetImportWorker0.log
     fullPath: D:\git\unity-demo\My project\Logs\shadercompiler-AssetImportWorker0.log
     projectPath: Logs\shadercompiler-AssetImportWorker0.log
@@ -484,15 +436,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\Temp\FSTimeGet-a91006fdab311f04b9ab64972299dbb8
-    fullPath: D:\git\unity-demo\My project\Temp\FSTimeGet-a91006fdab311f04b9ab64972299dbb8
-    projectPath: Temp\FSTimeGet-a91006fdab311f04b9ab64972299dbb8
+  - path: My project\Temp\FSTimeGet-13157820eee8f394e9d56dbe5d2e7bb6
+    fullPath: D:\git\unity-demo\My project\Temp\FSTimeGet-13157820eee8f394e9d56dbe5d2e7bb6
+    projectPath: Temp\FSTimeGet-13157820eee8f394e9d56dbe5d2e7bb6
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\Temp\FSTimeGet-b1518dc2330202449adaa0eda46e25b0
-    fullPath: D:\git\unity-demo\My project\Temp\FSTimeGet-b1518dc2330202449adaa0eda46e25b0
-    projectPath: Temp\FSTimeGet-b1518dc2330202449adaa0eda46e25b0
+  - path: My project\Temp\FSTimeGet-f04e2dd2b83c0804294c26894abdaabf
+    fullPath: D:\git\unity-demo\My project\Temp\FSTimeGet-f04e2dd2b83c0804294c26894abdaabf
+    projectPath: Temp\FSTimeGet-f04e2dd2b83c0804294c26894abdaabf
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -508,9 +460,3 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: My project\UserSettings\Layouts\default-2021.dwlt
-    fullPath: D:\git\unity-demo\My project\UserSettings\Layouts\default-2021.dwlt
-    projectPath: UserSettings\Layouts\default-2021.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3

@@ -14,7 +14,7 @@ public class PickUp : MonoBehaviour
     [SerializeField] GameObject Canvas;
     bool cd = false;
 
-    public float timeValue = 181;
+    public static  float timeValue = 90;
     public TextMeshProUGUI timerText;
     public bool completed = false;
     public bool StartTimer = false;
@@ -54,13 +54,14 @@ public class PickUp : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            StartTimer = true;
-            SoundManager.instance.PlaySingle(sound);
+            
 
             for (int i = 0; i < inventory.slots.Length; i++)
             {
                 for (int k = 0; k < inventory.slots.Length; k++)
                 {
+                    StartTimer = true;
+                    SoundManager.instance.PlaySingle(sound);
                     //check taht item not picked alerty
                     if (Canvas.transform.GetChild(k).GetComponent<Slot>().item == gameObject)
                     {
@@ -115,6 +116,13 @@ public class PickUp : MonoBehaviour
         {
             completed = true;
             SceneManager.LoadScene("LevelCompleted"); 
+        }
+    }
+    public void StopTime()
+    {
+        if (StartTimer == true)
+        {
+            StartTimer = false;
         }
     }
 }
