@@ -60,8 +60,9 @@ public class PickUp : MonoBehaviour
             {
                 for (int k = 0; k < inventory.slots.Length; k++)
                 {
+                   
+                    if(!StartTimer)SoundManager.instance.PlaySingle(sound);
                     StartTimer = true;
-                    SoundManager.instance.PlaySingle(sound);
                     //check taht item not picked alerty
                     if (Canvas.transform.GetChild(k).GetComponent<Slot>().item == gameObject)
                     {

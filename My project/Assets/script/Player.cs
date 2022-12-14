@@ -49,7 +49,6 @@ public class Player : MonoBehaviour
     public TMP_Text hpAmmount;
     public GameObject endScreen;
     float healt = 3;
-    bool _inventory =true;
 
     private void Start()
     {
@@ -175,7 +174,6 @@ public class Player : MonoBehaviour
     }
     public void levelCompleted()
     {
-        Debug.Log("wtf");
         //&& FindObjectOfType<Slot>().item
         if (rb.position.z < 125)
         {

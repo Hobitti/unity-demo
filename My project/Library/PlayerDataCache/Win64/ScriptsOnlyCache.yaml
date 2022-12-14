@@ -354,6 +354,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 6898}
     - Class: 114
       Script: {instanceID: 7754}
+    - Class: 114
+      Script: {instanceID: 7776}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1150,7 +1152,7 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
-      Hash: 29ab2d779d2f8f152b7374c8b3dca69b
+      Hash: 7f2d9d719aaf25cb0c7e0daa2f436604
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PickUp
@@ -1276,7 +1278,7 @@ ScriptsOnlyBuild:
     className: FireActivation
   - hash:
       serializedVersion: 2
-      Hash: 196382740708bf83fbaabe9d15089bfe
+      Hash: 59d02390641607ec9d74137a9855a968
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
@@ -1365,4 +1367,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/LevelSelection.unity
   - Assets/Scenes/LevelFailed.unity
   - Assets/Scenes/LevelCompleted.unity
-  playerPath: D:/stuff/My project.exe
+  playerPath: D:/stuff/dungeon/My project.exe

@@ -16,7 +16,7 @@ public class Timer : MonoBehaviour
     //Update is called once per frame
     void Update()
     {
-        DisplayTime(timeReceived);
+        //DisplayTime(timeReceived);
     }
     void DisplayTime(float timeToDisplay)
     {
